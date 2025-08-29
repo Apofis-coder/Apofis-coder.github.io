@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Comprar Tiquete</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>Comprar Tiquete</h2>
+    </div>
+
+    <form class="formulario">
+      <div class="campo">
+        <label>Identificación:</label>
+        <input type="text" name="identificacion">
+        <label>Fecha de Partida:</label>
+        <input type="date" name="fecha_partida">
+      </div>
+
+      <div class="campo">
+        <label>Nombres:</label>
+        <input type="text" name="nombres">
+        <label>Fecha de Regreso:</label>
+        <input type="date" name="fecha_regreso">
+      </div>
+
+      <div class="campo">
+        <label>Apellidos:</label>
+        <input type="text" name="apellidos">
+        <label>Hora de Vuelo:</label>
+        <input type="time" name="hora_vuelo">
+      </div>
+
+      <div class="campo">
+        <label>Teléfono:</label>
+        <input type="text" name="telefono">
+        <label>Hora llegada vuelo:</label>
+        <input type="time" name="hora_llegada">
+      </div>
+
+      <div class="campo">
+        <label>Correo:</label>
+        <input type="email" name="correo">
+        <label>Teléfono contacto:</label>
+        <input type="text" name="telefono_contacto">
+      </div>
+
+      <div class="campo">
+        <label>N Tiquete:</label>
+        <input type="text" name="n_tiquete">
+        <label>Tipo clase:</label>
+        <select name="clase">
+          <option value="">Seleccione</option>
+          <option value="economica">Clase Económica</option>
+          <option value="ejecutiva">Clase Ejecutiva</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label>Ciudad origen:</label>
+        <select name="origen">
+          <option value="">Seleccione</option>
+          <option value="santander">Santander-Barranca</option>
+          <option value="medellin">Medellín</option>
+          <option value="santamarta">Santa Marta</option>
+        </select>
+
+        <label>Ciudad destino:</label>
+        <select name="destino">
+          <option value="">Seleccione</option>
+          <option value="ibague">Tolima-Ibagué</option>
+          <option value="bogota">Bogotá</option>
+          <option value="cali">Cali</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label>Número pasajero:</label>
+        Adulto <input type="number" name="adultos" min="0" value="1">
+        Niños <input type="number" name="ninos" min="0" value="0">
+      </div>
+
+      <div class="acciones">
+        <button type="button">Consultar</button>
+      </div>
+
+      <div class="lista">
+        <h4>LISTAS DE VUELOS</h4>
+        <p>SS-1 Santander-Barrancabermeja</p>
+        <p>SS-2 Medellín</p>
+        <p>SS-3 Santamarta</p>
+        <p>SS-4 Medellín</p>
+      </div>
+
+      <div class="acciones">
+        <button type="button" class="cancelar">Cancelar</button>
+        <button type="submit" class="comprar">Comprar</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
